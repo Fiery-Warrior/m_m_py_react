@@ -39,7 +39,7 @@ function App() {
                 Moriarty
             </a>
 
-            <section className='icon-hamburger-menu' id ='menu'>
+            <section className='icon-hamburger-menu' id ='ham-menu'>
               <MdMenu/>
             </section>
             <section className='icon-house' id ='home'>
