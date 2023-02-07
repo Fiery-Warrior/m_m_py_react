@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import './recon.css';
 
 const bull = (
   <Box
@@ -17,22 +18,26 @@ const bull = (
 
 export default function CompanyCard() {
   return (
-    <Card sx={{  minWidth: 455, width: '300px', height: '275px', position: 'absolute', top: '150px', left: '545px', backgroundColor: '#F7F5F5' }} className="card">
-      <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-         {/*Word of the Day*/}
-        </Typography>
-        <Typography variant="h5" component="div">
-          Company
-        </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          Recon an entire company
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Website {bull} Email   <br/>
-{bull} IP </Button>
-      </CardActions>
-    </Card>
+
+    <Card sx={{  minWidth: 455, width: '300px', height: '275px', position: 'absolute', top: '150px', left: '545px' }} className="card">
+  <CardContent>
+    <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+    </Typography>
+    <Typography variant="h5" component="div" className='title'>
+      Company
+    </Typography>
+    <Typography className ='provide'>
+      Provide ≥ 1
+    </Typography>
+  </CardContent>
+  <CardActions>
+    <Typography className='desc'>
+      IP, website, social-media, email-address,<br/> phone-number, company-address
+    </Typography>
+  </CardActions>
+</Card>
+
+
+
   );
 }

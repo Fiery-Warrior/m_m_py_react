@@ -11,11 +11,15 @@ import { BsFillDoorOpenFill } from "react-icons/bs"
 import { BsPersonCircle } from "react-icons/bs"
 import { FaLaptopCode } from "react-icons/fa"
 import { CgTerminal } from "react-icons/cg"
+import { AiFillHome } from "react-icons/ai"
+import { AiFillClockCircle } from "react-icons/ai"
+import { MdMenu } from "react-icons/md"
+import Bscanning from './Recon/reconBScan.jsx'
 import BasicCard from './Recon/reconIndiv.jsx'
 import CompanyCard from './Recon/reconCompany.jsx'
-import ScanningCard from './Recon/ScanningCard.jsx'
-
-
+import ScanningCardW from './Recon/ScanningCard.jsx'
+import ReconA from './Recon/reconActive.jsx';
+import SocialE from './Recon/reconSocial.jsx'
 import './App.css';
 
 function App() {
@@ -25,6 +29,7 @@ function App() {
   return (
     <div className="App">
         <div className='flex-container-top'>
+
             <a
                 className="App-link"
                 href="http://127.0.0.1:8000/web-terminal/"
@@ -33,6 +38,18 @@ function App() {
             >
                 Moriarty
             </a>
+
+            <section className='icon-hamburger-menu' id ='menu'>
+              <MdMenu/>
+            </section>
+            <section className='icon-house' id ='home'>
+              <AiFillHome/>
+            </section>
+            <section className='icon-circle' id ='clock'>
+              <AiFillClockCircle/>
+            </section>
+
+
 
             <section className='icon' id ='recon'>
               <GiMagnifyingGlass/>
@@ -65,19 +82,18 @@ function App() {
               <FaLaptopCode/>
               <span className='tooltiptext'>Objectives</span>
             </section>
-
+            <Bscanning/>
             <BasicCard/>
             <CompanyCard/>
-            <ScanningCard/>
-
-
+            <ScanningCardW/>
+            <ReconA/>
+            <SocialE/>
             {/**Notepad <Notepad/>*/}
 
             {/*FaTerminal*/}
-            <a href="http://127.0.0.1:8000/web-terminal/" target="_blank">{/*onClick={() => setShowTerminal(!showTerminal)}*/}
+            <a href="http://127.0.0.1:8000/web-terminal/" target="_blank">
             <CgTerminal className= 'terminal-icon' id = 'terminal' />
             </a>
-
             <BsPersonCircle className='profile' id = 'profile'/>
         </div>
         {showTerminal && <Terminal/>}

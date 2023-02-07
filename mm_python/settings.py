@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'tasks',
     'web_terminal',
     'scanning',
+    'run_command',
     #add each new app, aka project here include , 'comma'
 
 ]

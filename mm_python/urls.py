@@ -38,5 +38,7 @@ urlpatterns = [
     #add additonal steps here
     path('', include('scanning.urls')),
 
+    path('', include('run_command.urls')),
+
 #remember to put the comma ,
 ]

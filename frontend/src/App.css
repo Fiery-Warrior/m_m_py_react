@@ -2,6 +2,14 @@
   background-color: black;
 }
 
+.header {
+  background-color: black;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 100px;
+}
+
 .App-logo {
   height: 100px;
   pointer-events: none;
@@ -24,7 +32,7 @@
   padding-top: 1%;
   padding-bottom: 2%;
   padding-left: 1%;
-  padding-right: 4%; 
+  padding-right: 7.5%; 
 }
 
 .flex-container-top {
@@ -76,6 +84,31 @@ and no smaller than ____px the terminal-output width can be no longer than 55px 
 
 
 }
+.icon-hamburger-menu {
+  position: absolute;
+  font-size: 30px; 
+  color: rgb(222, 226, 230);
+  padding-top: 2%;
+  left: 13px;
+  top: 55px;
+}
+.icon-house {
+  position: absolute;
+  font-size: 30px; 
+  color: rgb(222, 226, 230);
+  padding-top: 2%;
+  left: 54px;
+  top: 55px;
+}
+.icon-circle {
+  position: absolute;
+  font-size: 30px; 
+  color: rgb(222, 226, 230);
+  padding-top: 2%;
+  left: 95px;
+  top: 55px;
+}
+
 /*Would have the border around icon light up instead of the icon itself*/
 /*.icon:hover {
   border: 7px solid	rgb(220,20,60); 
@@ -120,7 +153,6 @@ and no smaller than ____px the terminal-output width can be no longer than 55px 
   padding-left: 2%;
   padding-right: 2%;
 }
-
 
 
 

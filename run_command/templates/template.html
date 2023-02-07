@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <content>
+        <form method="post">
+            {% csrf_token %}
+            <div>
+                <label for="server_ip">Server IP:</label>
+                <input type="text" id="server_ip" name="server_ip">
+            </div>
+            <div>
+                <label for="command">Command:</label>
+                <input type="text" id="command" name="command">
+            </div>
+            <button type="submit">Run Command</button>
+        </form>
+        
+        {% if output %}
+            <pre>{{ output|safe }}</pre>
+        {% endif %}
+    </content>
+</html>
+
+

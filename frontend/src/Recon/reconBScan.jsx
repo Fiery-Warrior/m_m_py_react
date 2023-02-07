@@ -16,15 +16,15 @@ const bull = (
   </Box>
 );
 
-export default function BasicCard() {
+export default function Bscanning() {
   return (
 
-    <Card sx={{  minWidth: 455, width: '300px', height: '275px', position: 'absolute', top: '150px', left: '50px' }} className="card">
+    <Card sx={{  minWidth: 455, width: '300px', height: '275px', position: 'absolute', top: '475px', left: '50px' }} className="card">
   <CardContent>
     <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
     </Typography>
     <Typography variant="h5" component="div" className='title'>
-      Individual
+      Blu. Scanning
     </Typography>
     <Typography className ='provide'>
       Provide ≥ 1
@@ -32,7 +32,7 @@ export default function BasicCard() {
   </CardContent>
   <CardActions>
     <Typography className='desc'>
-      IP, username, social-media, email-address,<br/> phone-number, home-address
+      IP, MAC, WiFI, Others
     </Typography>
   </CardActions>
 </Card>
