@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'web_terminal',
     'scanning',
     'run_command',
+    'recon',
     #add each new app, aka project here include , 'comma'
 
 ]
@@ -142,5 +143,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #for react
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend/build/static')
+    os.path.join(BASE_DIR, 'frontend/build/static'),
+    os.path.join(BASE_DIR, 'reconr/build/static'),
+
 ]

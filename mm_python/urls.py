@@ -40,5 +40,8 @@ urlpatterns = [
 
     path('', include('run_command.urls')),
 
+    path('', include('recon.urls')),
+
+
 #remember to put the comma ,
 ]
